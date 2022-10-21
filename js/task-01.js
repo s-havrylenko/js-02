@@ -17,7 +17,12 @@
 const logItems = function (array) {
 
   for (let i = 0; i < array.length; i += 1) {
-    console.log(`${i + 1} - ${array[i]}`);  
+
+    // Первый вариант решения
+    console.log(`${i + 1} - ${array[i]}`);
+
+    // Второй вариант решения
+    console.log(`${array.indexOf(array[i]) + 1} - ${array[i]}`);
   }  
 }
 
